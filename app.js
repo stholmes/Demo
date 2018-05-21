@@ -19,7 +19,7 @@ var cities = [{"city":"Baltimore",'lon': -76.612, "lat": 39.29},
 {"city":"Columbia", "lon":-76.839, "lat":39.24},
 {"city":"Germantown", "lon":-77.272, "lat":39.173},
 {"city":"Columbia", "lon":-76.839, "lat":39.24},
-{"city":"Silver Spring", "lon":-77.026, "lat":38.991},
+{"city":"Silver Spring", "lon":-77.026, "lat":38.991},{"city":"Bethesda", "lon":-77.178788, "lat":38.91729},
 {"city":"Frederick", "lon":-77.411, "lat":39.414},{"city": "Annapolis", "lon":-76.4922, "lat": 38.9784},{"city":"Ocean City", "lon":-75.0849, "lat":38.3365}   ]
 var capital = [{"city": "Annapolis", "lon":-76.55, "lat": 39.05} ]
 var path = d3.geoPath(projection)

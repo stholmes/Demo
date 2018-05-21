@@ -20,8 +20,8 @@ var cities = [{"city":"Baltimore",'lon': -76.612, "lat": 39.29},
 {"city":"Germantown", "lon":-77.272, "lat":39.173},
 {"city":"Columbia", "lon":-76.839, "lat":39.24},
 {"city":"Silver Spring", "lon":-77.026, "lat":38.991},
-{"city":"Frederick", "lon":-77.411, "lat":39.414},{"city": "Annapolis", "lon":-76.4922, "lat": 38.9784}  ]
-var capital = [{"city": "Annapolis", "lon":-76.4922, "lat": 38.9784} ]
+{"city":"Frederick", "lon":-77.411, "lat":39.414},{"city": "Annapolis", "lon":-76.4922, "lat": 38.9784},{"city":"Ocean City", "lon":-75.0849, "lat":38.3365}   ]
+var capital = [{"city": "Annapolis", "lon":-76.55, "lat": 39.05} ]
 var path = d3.geoPath(projection)
 var selectValue = '0'
 var city_layer = 'on'
@@ -180,8 +180,8 @@ function draw_cities(svg){
             .data(cities)
             .enter()
             .append('circle')
-            .attr('fill', 'black')
-            .style('opacity', 0.5)
+            .attr('fill', 'yellow')
+            .style('opacity', 0.75)
             .attr('cx', function(d) {
                 return projection([d.lon, d.lat])[0]})
             .attr('cy', function(d) {
@@ -196,7 +196,7 @@ function draw_cities(svg){
             .attr('y', function(d){return projection([d.lon, d.lat])[1]})
             .attr('x', function(d){return projection([d.lon, d.lat])[0]})
             .attr('class', 'city')
-            .style('font-size', '10px')
+            .style('font-size', '13px')
             .style('text-anchor', 'end')
             .style('font-family', 'sans-serif')
             }else {
